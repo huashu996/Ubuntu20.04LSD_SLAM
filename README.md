@@ -31,8 +31,16 @@
 ```
 ## 3. run
 ```
-	rosrun lsd_slam_viewer viewer
-	rosrun lsd_slam_core live_slam image:=/image_raw camera_info:=/camera_info
-	rosbag play LSD_room_pc.bag
+    另起终端
+    roscore
+    另起终端
+    source devel/setup.bash	
+    rosrun lsd_slam_viewer viewer
+    另起终端
+    source devel/setup.bash
+    rosrun lsd_slam_core live_slam image:=/image_raw camera_info:=/camera_info
+    另起终端   
+    source devel/setup.bash 
+    rosbag play LSD_room_pc.bag
 ```
 
